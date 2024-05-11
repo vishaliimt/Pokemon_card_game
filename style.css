@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header { 
+    text-align: center;
+    height: 100px;  
+    color:black;
+    letter-spacing: 4px;
+    padding-top: 5%;
+    font-size: xx-large;
+}
+h1{
+ font-weight: bolder;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    
+   
+}
+.card:hover{
+    filter: grayscale(0%);
+}
+    
+.card{
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    width: 230px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    filter: grayscale(90%);
+   
+}
+#card1{
+    z-index: 4;
+}
+#card2{
+    z-index: 3;
+    rotate: -5deg;
+}
+#card2:hover{
+    z-index: 5;
+}
+#card3{
+    z-index: 2;
+    rotate: -10deg;
+}
+#card3:hover{
+    z-index: 5;
+}
+#card4{
+    z-index: 1;
+    rotate: -15deg;
+}
+#card4:hover{
+    z-index: 5;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    height: 4vh;
+    background-color: rgba(0, 0, 255, 0.618);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
